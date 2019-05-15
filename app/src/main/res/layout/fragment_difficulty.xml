@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary"
+	android:weightSum="10">
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:gravity="center">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/colorAccent"
+			android:textAlignment="center"
+			style="@style/Title.Difficulty"
+			android:text="@string/difficulty_title_port" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="2"
+		android:gravity="center">
+		<Button
+			android:id="@+id/btn_easy"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			style="@style/Button.Difficulty"
+			android:text="@string/difficulty_easy"
+			android:textColor="@color/colorAccent"
+			android:backgroundTint="@color/colorEasy" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="2"
+		android:gravity="center">
+		<Button
+			android:id="@+id/btn_medium"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			style="@style/Button.Difficulty"
+			android:text="@string/difficulty_medium"
+			android:textColor="@color/colorAccent"
+			android:backgroundTint="@color/colorMedium" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="2"
+		android:gravity="center">
+		<Button
+			android:id="@+id/btn_hard"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			style="@style/Button.Difficulty"
+			android:text="@string/difficulty_hard"
+			android:textColor="@color/colorAccent"
+			android:backgroundTint="@color/colorHard" />
+	</RelativeLayout>
+</LinearLayout>

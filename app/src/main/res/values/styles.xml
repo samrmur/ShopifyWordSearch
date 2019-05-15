@@ -1,0 +1,43 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Welcome Title -->
+    <style name="Title.Welcome" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Difficulty Title -->
+    <style name="Title.Difficulty" parent="Title.Welcome">
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <!-- Difficulty Button -->
+    <style name="Button.Difficulty" parent="TextAppearance.AppCompat.Button">
+        <item name="android:radius">20dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_difficulty</item>
+    </style>
+
+    <!-- Word Item -->
+    <style name="Item.Word" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+    </style>
+
+    <!-- Game Title -->
+    <style name="Title.Game" parent="Title.Welcome">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/background_light</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

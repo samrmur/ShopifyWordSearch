@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/background_light">
+	<LinearLayout
+		android:id="@+id/game_layout"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<RelativeLayout
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			android:gravity="center"
+			android:theme="?attr/actionBarTheme">
+			<TextView
+				android:id="@+id/num_found"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/Title.Game"
+				tools:text="Words Found: 0/9"/>
+		</RelativeLayout>
+		<com.alabi.shopifywordsearch.util.views.WordSearchGridLayout
+			android:id="@+id/game_grid"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="@color/colorDarkGrey" />
+		<GridView
+			android:id="@+id/words_grid"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:numColumns="3"
+			android:verticalSpacing="5dp" />
+	</LinearLayout>
+	<androidx.core.widget.ContentLoadingProgressBar
+		android:id="@+id/loading"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">ShopifyWordSearch</string>
+
+    <!-- Welcome Screen Strings -->
+    <string name="welcome_title">Word Search</string>
+
+    <!-- Difficulty Screen Strings -->
+    <string name="difficulty_title_port">Select\nDifficulty</string>
+    <string name="difficulty_title_land">Select Difficulty</string>
+    <string name="difficulty_easy">EASY</string>
+    <string name="difficulty_medium">MEDIUM</string>
+    <string name="difficulty_hard">HARD</string>
+
+    <!-- Game Screen Strings -->
+    <string name="game_title">Words Found: %1$d/%2$d</string>
+    <string name="congratulations">Congratulations! You\'ve found all the words!</string>
+
+    <!-- Easy difficulty words -->
+    <string-array name="easy">
+        <item>@string/kotlin</item>
+        <item>@string/swift</item>
+        <item>@string/objectivec</item>
+        <item>@string/variable</item>
+        <item>@string/java</item>
+        <item>@string/mobile</item>
+    </string-array>
+
+    <!-- Medium difficulty words -->
+    <string-array name="medium">
+        <item>@string/kotlin</item>
+        <item>@string/swift</item>
+        <item>@string/objectivec</item>
+        <item>@string/variable</item>
+        <item>@string/java</item>
+        <item>@string/mobile</item>
+        <item>@string/android</item>
+        <item>@string/apple</item>
+    </string-array>
+
+    <!-- Hard difficulty words -->
+    <string-array name="hard">
+        <item>@string/kotlin</item>
+        <item>@string/swift</item>
+        <item>@string/objectivec</item>
+        <item>@string/variable</item>
+        <item>@string/java</item>
+        <item>@string/mobile</item>
+        <item>@string/android</item>
+        <item>@string/apple</item>
+        <item>@string/dagger</item>
+        <item>@string/retrofit</item>
+    </string-array>
+
+    <!-- List of words -->
+    <string name="kotlin">kotlin</string>
+    <string name="swift">swift</string>
+    <string name="objectivec">objectivec</string>
+    <string name="variable">variable</string>
+    <string name="java">java</string>
+    <string name="mobile">mobile</string>
+    <string name="android">android</string>
+    <string name="apple">apple</string>
+    <string name="dagger">dagger</string>
+    <string name="retrofit">retrofit</string>
+</resources>
