@@ -22,7 +22,7 @@ import kotlin.collections.ArrayList
  * Fragment that represents the game
  * @author Samer Alabi
  */
-class GameFragment: Fragment(), GameView {
+class GameFragment: Fragment(), GameView, View.OnClickListener {
     @Inject
     lateinit var presenter: GamePresenter
 
@@ -53,6 +53,10 @@ class GameFragment: Fragment(), GameView {
             // Return new fragment with arguments
             return fragment
         }
+    }
+
+    override fun onClick(view: View) {
+        activity?.onBackPressed()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -177,6 +181,9 @@ class GameFragment: Fragment(), GameView {
 
         // Update title
         updateTitle()
+
+        // Setup back button
+        back_button.setOnClickListener(this)
 
         // Check for words
         checkForWords(words)

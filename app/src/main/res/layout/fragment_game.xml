@@ -15,14 +15,24 @@
 			android:layout_width="match_parent"
 			android:layout_height="?attr/actionBarSize"
 			android:background="?attr/colorPrimary"
-			android:gravity="center"
 			android:theme="?attr/actionBarTheme">
 			<TextView
 				android:id="@+id/num_found"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
 				style="@style/Title.Game"
 				tools:text="Words Found: 0/9"/>
+			<ImageButton
+				android:id="@+id/back_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="10dp"
+				android:contentDescription="@string/app_name"
+				android:background="@null"
+				android:gravity="start"
+				android:src="@drawable/ic_arrow_back" />
 		</RelativeLayout>
 		<com.alabi.shopifywordsearch.util.views.WordSearchGridLayout
 			android:id="@+id/game_grid"
